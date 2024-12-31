@@ -56,6 +56,8 @@ public class Controller {
 
 		if (arquivoAtual != null) {
 			escreverArquivo(arquivoAtual, textArea.getText());
+			arquivoAlterado = false;
+			definirNome(arquivoAtual, arquivoAlterado);
 		} else {
 			salvarArquivoComo();
 		}
@@ -81,6 +83,8 @@ public class Controller {
 
 		if (arquivoAtual != null)
 			escreverArquivo(arquivoAtual, textArea.getText());
+			arquivoAlterado = false;
+			definirNome(arquivoAtual, arquivoAlterado);
 
 	}
 
